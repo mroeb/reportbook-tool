@@ -77,7 +77,7 @@ export default {
         
         exportData() {
 
-            prompt = "füge ein icon hinzu und korrigiere Fehler. vormatiere im volgenden format und nicht in json. (konvertiere json zu markdown text in einem Codeblock):\n # 💾 Überschrift\n - nen text\nHier sind die json daten: \n";
+            prompt = "Füge ein Icon hinzu und korrigiere Fehler. Formatiere im folgenden Format und nicht in JSON. (Konvertiere JSON zu Markdown-Text in einem Codeblock):\n# 💾 Überschrift \n- Nen Text\nHier sind die JSON-Daten: \n";
 
             this.exportedData = prompt + JSON.stringify(this.day, null, 2);
             this.showExportDialog = true;
